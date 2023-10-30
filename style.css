@@ -1,0 +1,92 @@
+/*
+Estilos Generales 
+ */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px;
+}
+
+body {
+    background-color: rgb(211, 73, 73);
+    font-family: cursive;
+}
+
+/* 
+Header
+ */
+
+header {
+    background-color: rgba(253, 247, 237, 0.973);
+}
+
+
+/*
+Main 
+*/
+
+.bienvenido {
+    width: 90%;
+}
+
+.pequeño {
+    width: 50%;
+}
+
+
+/*
+Footer 
+   */
+footer {
+    background-color: black;
+    color: white;
+    border-top: 3px solid orange;
+}
+
+/* 
+Media Queries
+*/
+
+/* punto:2 */
+
+@media(min-width:576px) {
+
+    body {
+        background-color: rgba(214, 130, 240, 0.945);
+    }
+    .contenedor,
+    .pequeño {
+        width: 70%;
+        text-align: center;
+
+    }
+}
+
+/* punto:3 */
+@media(min-width:768px) {
+    body{
+        background-color: none;
+    }
+    .contenedor,
+    .pequeño {
+        background-color: rgb(37, 205, 211);
+    }
+}
+
+/* punto:4 */
+@media(min-width:992px) {
+
+    .contenedor,
+    .pequeño {
+        border: 30px dashed rgba(179, 24, 158, 0.973);
+    }
+}
+/* punto:5 */
+@media(min-width:1200px) {
+    .contenedor,
+    .pequeño {
+        max-width: 1100px;
+    }
+}
